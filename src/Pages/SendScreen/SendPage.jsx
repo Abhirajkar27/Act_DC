@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
-import './DCMain.css';
+import './SendPage.css';
 import { DC_Context } from '../../context/DC_Context';
 
-const DCMain = (props) => {
+const SendPage = (props) => {
     const { dcQues,
         setDcQues,
         senAns,
@@ -37,10 +37,10 @@ const DCMain = (props) => {
                     value={senAns}
                     onChange={handleInput_DC} />
             </div>
-            <button className={`nxtbtntp_DC`} onClick={props.onforw}><span className={`nxtbtntp-txt_DC`}
+            <button className={`nxtbtntp_DC`}><span className={`nxtbtntp-txt_DC`}
                 style={{ opacity: senAns ? '' : '.3' }}>Next</span></button>
         </div>
     )
 }
 
-export default DCMain;
+export default SendPage;
