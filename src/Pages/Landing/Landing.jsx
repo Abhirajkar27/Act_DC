@@ -3,9 +3,8 @@ import main_pht from '../../assets/DC_Main_pic.png';
 import ActivityInfo from '../../components/ActivityInfo';
 import './Landing.css';
 
-const Landing = () => {
+const Landing = (props) => {
     const [isShowActivityInfo, setISShowActivityInfo] = useState(false);
-
 
     return (
         <div className='DC_Landing'>
@@ -24,7 +23,7 @@ const Landing = () => {
             <div
                 className={`Landing_buttons_DC`}
             >
-                <button className="Landing_start_DC">Start</button>
+                <button className="Landing_start_DC" onClick={props.onNext}>Start</button>
                 <button className="Landing_activity_DC">choose another activity</button>
             </div>
         </div>
