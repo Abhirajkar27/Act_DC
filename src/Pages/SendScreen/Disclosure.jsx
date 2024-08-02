@@ -22,27 +22,27 @@ const Disclosure = (props) => {
   };
 
   return (
-    <div className="container">
-      <div className="copy-box">
-        <div className="copy-text">
+    <div className="container_DDC">
+      <div className="copy-box_DDC">
+        <div className="copy-text_DDC">
           {`https://emojichactivitywybtestingv2rec.netlify.app/?activityId=${props.activityId}`}
         </div>
-        <button className="copy-button" onClick={handleCopy}>
+        <button className="copy-button_DDC" onClick={handleCopy}>
           Copy
         </button>
-        {copyFeedback && <div className="copy-feedback">{copyFeedback}</div>}
+        {copyFeedback && <div className="copy-feedback_DDC">{copyFeedback}</div>}
       </div>
       {!showMessage ? (
-        <div className="oscillate">
-          <img src={imag} alt="Oscillating" className="image" />
+        <div className="oscillate_DDC">
+          <img src={imag} alt="Oscillating" className="image_DDC" />
         </div>
       ) : (
         <>
-          <div className="message-container">
-            <div className="main-message">Nailed It!😍</div>
-            <div className="sub-message">Activity sent to Rahul</div>
+          <div className="message-container_DDC">
+            <div className="main-message_DDC">Nailed It!😍</div>
+            <div className="sub-message_DDC">Activity sent to Rahul</div>
           </div>
-          <button className={`nxtbtntp`} onClick={()=>console.log(9)} ><span className={`nxtbtntp-txt`}>Continue</span></button>
+          <button className={`nxtbtntp_DDC`} onClick={()=>console.log(9)} ><span className={`nxtbtntp-txt_DDC`}>Continue</span></button>
         </>
       )}
     </div>

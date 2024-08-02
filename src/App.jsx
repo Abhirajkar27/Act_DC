@@ -20,7 +20,7 @@ function App() {
       content = <SendPage onClose={() => { setIndex(0); }} onforw={() => { setIndex(2); }} />;
       break;
     case 2:
-      content = <Disclosure />;
+      content = <Disclosure activityId={activityId}/>;
       break;
     default:
       content = <Landing onNext={() => { setIndex(0); }} />;

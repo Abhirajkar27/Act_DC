@@ -1,12 +1,13 @@
-.container {
+.container_DDC {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     flex-direction: column;
+    background: var(--Dark-Dark--100, #0E1928);
   }
   
-  .oscillate {
+  .oscillate_DDC {
     animation: oscillate 4s infinite;
   }
   
@@ -28,16 +29,16 @@
     }
   }
   
-  .image {
+  .image_DDC {
     width: 200px;
     height: 200px;
   }
   
-  .message-container {
+  .message-container_DDC {
     text-align: center;
   }
   
-  .main-message {
+  .main-message_DDC {
     color: var(--Accent-Accent--03-Accent-03, #FBFF08);
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: "Saira SemiCondensed";
@@ -47,7 +48,7 @@
     line-height: 120%; /* 2.4rem */
   }
   
-  .sub-message {
+  .sub-message_DDC {
     color: var(--Light-Light--100, #FFF);
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: Gilroy;
@@ -57,7 +58,7 @@
     line-height: 120%; /* 1.05rem */
   }
   
-  .continue-button {
+  .continue-button_DDC {
     margin-top: 20px;
     padding: 10px 20px;
     background-color: var(--Accent-Accent--03-Accent-03, #FBFF08);
@@ -67,20 +68,9 @@
     font-size: 1rem;
     cursor: pointer;
   }
+
   
-
-
-  /* to copy */
-
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-  }
-  
-  .copy-box {
+  .copy-box_DDC {
     background-color: #f0f0f0;
     padding: 20px;
     margin-bottom: 20px;
@@ -92,14 +82,14 @@
     max-width: 600px;
   }
   
-  .copy-text {
+  .copy-text_DDC {
     flex: 1;
     overflow-wrap: break-word;
     word-wrap: break-word;
     word-break: break-word;
   }
   
-  .copy-button {
+  .copy-button_DDC {
     margin-left: 10px;
     padding: 8px 12px;
     background-color: #007bff;
@@ -110,12 +100,38 @@
     z-index: 999999;
   }
   
-  .copy-button:hover {
+  .copy-button_DDC:hover {
     background-color: #0056b3;
   }
   
-  .copy-feedback {
+  .copy-feedback_DDC {
     margin-top: 8px;
     font-size: 12px;
     color: #28a745; 
+  }
+
+
+  
+.nxtbtntp_DDC {
+    display: flex;
+    width: 56.5vw;
+    height: 5.6vh;
+    padding: 0.9375rem 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border: 0px;
+    border-radius: 1.5rem;
+    background: var(--Primary-Primary-100, #c6ff00);
+    position: fixed;
+    bottom: 2rem;
+  }
+  
+  .nxtbtntp-txt_DDC {
+    color: var(--Neutral-Rich-Dark, #090909);
+    font-family: Gilroy;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
   }
