@@ -179,3 +179,54 @@
   font-weight: 700;
   line-height: 100%;
 }
+
+
+/* Animation Starts here  */
+.send-pg_SDC {
+  animation: slideInFromTop 0.6s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.1s;
+}
+
+.msgheading_SDC {
+  animation: slideInFromTop 0.6s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.2s;
+}
+
+.msgSubheading_SDC {
+  animation: slideInFromTop 0.6s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.3s;
+}
+
+.ques_ans_container_SDC {
+  animation: slideInFromTop 0.6s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.4s;
+}
+
+.ans_area_SDC {
+  animation: slideInFromTop 0.6s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.5s;
+}
+
+.nxtbtntp_SDC {
+  animation: slideInFromTop 0.6s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.6s;
+}
+
+@keyframes slideInFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation Ends Here  */
