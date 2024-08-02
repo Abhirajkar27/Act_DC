@@ -15,7 +15,9 @@ const DCMain = (props) => {
             </div>
             <div className='msgheading_DC'><span>Choose your question</span></div>
             <div className='msgSubheading_DC'><span>Choose a question for you both to answer</span></div>
-
+            <div className="ques_ans_container_DC">
+                <span className='ques_DC'>Most random way that you have entertained yourself in the past week?</span>
+            </div>
             <button className={`nxtbtntp_DC`}><span className={`nxtbtntp-txt_DC`}>Next</span></button>
     </div>
   )

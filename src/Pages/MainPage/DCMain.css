@@ -18,7 +18,7 @@
 
 .msgheading_DC {
   width: 85vw;
-  margin-top: 100px;
+  margin-top: 90px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -26,7 +26,7 @@
 .msgheading_DC span {
   color: var(--Accent-Accent--03-Accent-03, #fbff08);
   text-align: center;
-  font-feature-settings: 'liga' off, 'clig' off;
+  font-feature-settings: "liga" off, "clig" off;
   font-family: "Saira SemiCondensed Bold";
   font-size: 2rem;
   font-style: normal;
@@ -52,8 +52,29 @@
   line-height: 120%;
 }
 
-
-.nxtbtntp_DC{
+.ques_ans_container_DC {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20rem;
+  height: 14.0625rem;
+  flex-shrink: 0;
+  margin-top: 4.2vh;
+  border-radius: var(--large, 0.75rem);
+  background: var(--Accent-Accent--02-Accent-02-neon, #ff5af9);
+}
+.ques_DC {
+  color: var(--Dark-Dark--100, #0e1928);
+  width: 18.2rem;
+  text-align: center;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Gilroy;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 1.35rem */
+}
+.nxtbtntp_DC {
   display: flex;
   width: 56.5vw;
   height: 5.6vh;
@@ -68,7 +89,7 @@
   bottom: 2rem;
 }
 
-.nxtbtntp-txt_DC{
+.nxtbtntp-txt_DC {
   color: var(--Neutral-Rich-Dark, #090909);
   font-family: Gilroy;
   font-size: 0.875rem;
