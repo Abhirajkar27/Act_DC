@@ -1,0 +1,96 @@
+.DC_Landing {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Accent-Accent--02-Accent-02-neon, #ff5af9);
+}
+
+.bkbtn_dc {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  position: fixed;
+  float: left;
+  top: 1.2rem;
+  left: 1.25rem;
+}
+
+.Landing_pc_DC {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main_pc_DC {
+  width: 100%;
+  max-width: 82vw;
+  height: auto;
+}
+
+.Landing_activity_info_DC {
+  position: relative;
+  top: 3rem;
+  color: var(--Light-Light--80, #e0e7f1);
+  font-family: Gilroy;
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  text-decoration-line: underline;
+}
+
+.activity_info_DC{
+  margin-top: -25px;
+}
+
+.Landing_buttons_DC {
+  position: fixed;
+  bottom: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.Landing_start_DC {
+  font-weight: 700;
+  display: flex;
+  width: 13.625rem;
+  min-width: 52.76vw;
+  padding: 0.9375rem 2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 1.5rem;
+  background: var(--Primary-Primary-100, #c6ff00);
+  border: none;
+  color: var(--Neutral-Rich-Dark, #090909);
+  font-family: Gilroy;
+  font-size: 14px;
+  font-style: normal;
+}
+
+.Landing_activity_DC {
+  color: var(--Light-Light--100, #fff);
+  font-family: Gilroy;
+  font-size: 14px;
+  width: 13.625rem;
+  min-width: 52.76vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  background: transparent;
+  display: inline-flex;
+  padding: 0.9375rem 2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 0.75rem;
+  font-weight: 700;
+  border: 1.6px solid var(--Light-Light--100, #fff);
+}
