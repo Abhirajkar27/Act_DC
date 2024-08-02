@@ -54,10 +54,11 @@
 
 .ques_ans_container_DC {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 20rem;
-  height: 14.0625rem;
+  width: 88vw;
+  height: 28.17vh;
   flex-shrink: 0;
   margin-top: 4.2vh;
   border-radius: var(--large, 0.75rem);
@@ -65,15 +66,71 @@
 }
 .ques_DC {
   color: var(--Dark-Dark--100, #0e1928);
-  width: 18.2rem;
+  /* width: 18.2rem; */
+  width: 70vw;
+  margin-bottom: 0.5vh;
   text-align: center;
   font-feature-settings: "liga" off, "clig" off;
   font-family: Gilroy;
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 120%; /* 1.35rem */
+  line-height: 120%;
 }
+
+.newSelectbtn_DC {
+  display: inline-flex;
+  padding: 2px 10px;
+  align-items: center;
+  gap: 9px;
+  border-radius: 50px;
+  border: 1px solid var(--Neutral-Light, #0e1928);
+  margin-top: 0.5rem;
+}
+
+.newSelectIcon_DC {
+  width: 19px;
+  height: 19px;
+}
+.newSelectText_DC {
+  color: var(--Neutral-Light, #0e1928);
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Gilroy;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.ans_area_DC {
+  width: 82vw;
+  height: 8.3vh;
+  flex-shrink: 0;
+  margin-top: 3vh;
+  box-sizing: border-box;
+  padding: 0.75rem;
+  border-radius: var(--large, 0.75rem);
+  background: var(--Light-Light--100, #fff);
+  border: none;
+}
+.ans_area_DC::placeholder {
+  color: var(--Dark-Dark--50, #79889d);
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Gilroy;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 1.05rem */
+}
+.ans_area_DC:focus {
+  border-radius: var(--large, 0.75rem);
+  border: 1px solid var(--Dark-Dark--100, #0e1928);
+  background: var(--Light-Light--100, #fff);
+  box-shadow: 0px 2px 0px 0px #000;
+  outline: none;
+}
+
 .nxtbtntp_DC {
   display: flex;
   width: 56.5vw;
