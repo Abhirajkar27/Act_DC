@@ -16,7 +16,7 @@ function App() {
       content = <DCMain onClose={() => { setIndex(null); }} onforw={() => { setIndex(1); }} />;
       break;
     case 1:
-      content = <SendPage onClose={() => { setIndex(null); }} onforw={() => { setIndex(1); }} />;
+      content = <SendPage onClose={() => { setIndex(0); }} onforw={() => { setIndex(2); }} />;
       break;
     default:
       content = <Landing onNext={() => { setIndex(0); }} />;
