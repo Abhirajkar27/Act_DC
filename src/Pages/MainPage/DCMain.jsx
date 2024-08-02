@@ -6,7 +6,7 @@ const DCMain = (props) => {
     const { dcQues,
         setDcQues,
         senAns,
-        handleInput_DC} = useContext(DC_Context);
+        handleInput_DC } = useContext(DC_Context);
 
     return (
         <div className='main-pg_DC'>
@@ -37,8 +37,13 @@ const DCMain = (props) => {
                     value={senAns}
                     onChange={handleInput_DC} />
             </div>
-            <button className={`nxtbtntp_DC`} onClick={props.onforw}><span className={`nxtbtntp-txt_DC`}
-                style={{ opacity: senAns ? '' : '.3' }}>Next</span></button>
+            <button
+                className={`nxtbtntp_DC`}
+                onClick={senAns ? props.onforw : null}
+                style={{ cursor: senAns ? '' : 'not-allowed' }}>
+                <span className={`nxtbtntp-txt_DC`}
+                    style={{ opacity: senAns ? '' : '.3' }}>Next</span>
+            </button>
         </div>
     )
 }
