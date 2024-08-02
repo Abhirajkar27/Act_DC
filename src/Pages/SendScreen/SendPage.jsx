@@ -1,12 +1,13 @@
 import React, { useContext } from 'react';
 import './SendPage.css';
 import { DC_Context } from '../../context/DC_Context';
+import AddNote from '../../components/AddNote';
 
 const SendPage = (props) => {
     const { dcQues,
-        setDcQues,
         senAns,
-        handleInput_DC} = useContext(DC_Context);
+        noteTextareaValue,
+        setNoteTextareaValue} = useContext(DC_Context);
 
     return (
         <div className='send-pg_SDC'>
@@ -25,6 +26,7 @@ const SendPage = (props) => {
                 <span className='ques_SDC'>{dcQues}</span>
                 <div className='ans_area_SDC'>{senAns}</div>
             </div>
+            <AddNote noteTextareaValue={noteTextareaValue} setNoteTextareaValue={setNoteTextareaValue}/>
             <button className={`nxtbtntp_SDC`}><span className={`nxtbtntp-txt_SDC`}>Send</span></button>
         </div>
     )

@@ -5,6 +5,7 @@ const DC_Context = createContext();
 const DC_Provider = ({ children }) => {
     const [dcQues, setDcQues] = useState('Most random way that you have entertained yourself in the past week?');
     const [senAns, setSenAns] = useState('');
+    const [noteTextareaValue, setNoteTextareaValue] = useState('');
 
     function handleInput_DC(event) {
         let value = event.target.value;
@@ -28,6 +29,8 @@ const DC_Provider = ({ children }) => {
                 senAns, 
                 setSenAns,
                 handleInput_DC,
+                noteTextareaValue, 
+                setNoteTextareaValue,
             }}
         >
             {children}
