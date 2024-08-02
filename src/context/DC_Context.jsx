@@ -9,8 +9,8 @@ const DC_Provider = ({ children }) => {
 
     function handleInput_DC(event) {
         let value = event.target.value;
-        if (value.length > 55) {
-            value = value.slice(0, 55);
+        if (value.length > 111) {
+            value = value.slice(0, 111);
         }
         const lineCount = value.split('\n').length;
         if (lineCount <= 4) {
@@ -19,8 +19,6 @@ const DC_Provider = ({ children }) => {
         }
 
     }
-
-
     return (
         <DC_Context.Provider
             value={{
