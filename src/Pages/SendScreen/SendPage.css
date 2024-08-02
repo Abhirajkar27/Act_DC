@@ -63,7 +63,22 @@
   margin-top: 4.2vh;
   border-radius: var(--large, 0.75rem);
   background: var(--Accent-Accent--02-Accent-02-neon, #ff5af9);
+  position: relative;
+  z-index: 2;
 }
+
+.thread_qasdc {
+  position: absolute;
+  width: 9.40831rem;
+  height: 9.875rem;
+  top: 0;
+  right: 0;
+  flex-shrink: 0;
+  stroke-width: 14px;
+  stroke: var(--Accent-Accent--02-Accent-02, #ff8afb);
+  z-index: 1;
+}
+
 .ques_SDC {
   color: var(--Dark-Dark--100, #0e1928);
   /* width: 18.2rem; */
@@ -76,6 +91,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 120%;
+  z-index: 2;
 }
 
 .ans_area_SDC {
@@ -93,6 +109,7 @@
   background: var(--Accent-Accent--03-Accent-03---Light, #feffb1);
   border: none;
   position: relative;
+  z-index: 2;
 }
 .prof_SDC {
   display: flex;
@@ -132,6 +149,7 @@
   flex-shrink: 0;
   position: absolute;
   right: 1.5rem;
+  z-index: 2;
 }
 .lock_SDC img {
   width: 10vw;

@@ -25,10 +25,13 @@ const SendPage = (props) => {
             <div className='msgheading_SDC'><span>Choose your question</span></div>
             <div className='msgSubheading_SDC'><span>Choose a question for you both to answer</span></div>
             <div className="ques_ans_container_SDC">
+            <svg className='thread_qasdc' xmlns="http://www.w3.org/2000/svg" width="143" height="152" viewBox="0 0 143 152" fill="none">
+                    <path d="M9.99995 -9C-2.00002 34 37.4 88.8 85 74C132.6 59.2 123 15.6428 85 26.5C57.1116 34.4681 47 83 111.5 92.5C155 98.907 164.5 123.5 155 149" stroke="#FF8AFB" stroke-width="14" />
+                </svg>
                 <span className='ques_SDC'>{dcQues}</span>
                 <div className='ans_area_SDC'>
                     <div className='prof_SDC'>
-                        <img src={profpic} alt='profile_img' /></div>
+                        <img src={profpic} alt='profile_img'/></div>
                     <span className='Blur_text_SDE'>{senAns}</span>
                     <div className='lock_SDC'>
                         <img src={lock} alt='lock-icon' /></div>

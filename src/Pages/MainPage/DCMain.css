@@ -57,6 +57,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
   width: 88vw;
   height: 28.17vh;
   flex-shrink: 0;
@@ -76,6 +77,18 @@
   font-style: normal;
   font-weight: 700;
   line-height: 120%;
+  z-index: 2;
+}
+.thread_qadc {
+  position: absolute;
+  width: 9.40831rem;
+  height: 9.875rem;
+  top: 0;
+  right: 0;
+  flex-shrink: 0;
+  stroke-width: 14px;
+  stroke: var(--Accent-Accent--02-Accent-02, #ff8afb);
+  z-index: 1;
 }
 
 .newSelectbtn_DC {
@@ -86,6 +99,7 @@
   border-radius: 50px;
   border: 1px solid var(--Neutral-Light, #0e1928);
   margin-top: 0.5rem;
+  z-index: 2;
 }
 
 .newSelectIcon_DC {
@@ -113,6 +127,7 @@
   border-radius: var(--large, 0.75rem);
   background: var(--Light-Light--100, #fff);
   border: none;
+  z-index: 2;
 }
 .ans_area_DC::placeholder {
   color: var(--Dark-Dark--50, #79889d);

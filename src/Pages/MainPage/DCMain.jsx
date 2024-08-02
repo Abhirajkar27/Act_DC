@@ -22,6 +22,9 @@ const DCMain = (props) => {
             <div className='msgheading_DC'><span>Choose your question</span></div>
             <div className='msgSubheading_DC'><span>Choose a question for you both to answer</span></div>
             <div className="ques_ans_container_DC">
+                <svg className='thread_qadc' xmlns="http://www.w3.org/2000/svg" width="143" height="152" viewBox="0 0 143 152" fill="none">
+                    <path d="M9.99995 -9C-2.00002 34 37.4 88.8 85 74C132.6 59.2 123 15.6428 85 26.5C57.1116 34.4681 47 83 111.5 92.5C155 98.907 164.5 123.5 155 149" stroke="#FF8AFB" stroke-width="14" />
+                </svg>
                 <span className='ques_DC'>{dcQues}</span>
                 <div className='newSelectbtn_DC'>
                     <svg className='newSelectIcon_DC' xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
