@@ -20,9 +20,7 @@ const Landing = (props) => {
             {!isShowActivityInfo && <div className="activity_info_DC">
                 <p className='Landing_activity_info_DC' onClick={() => { setISShowActivityInfo(true); }}>Activity info</p>
             </div>}
-            <div
-                className={`Landing_buttons_DC`}
-            >
+            <div className={`Landing_buttons_DC`}>
                 <button className="Landing_start_DC" onClick={props.onNext}>Start</button>
                 <button className="Landing_activity_DC">choose another activity</button>
             </div>
