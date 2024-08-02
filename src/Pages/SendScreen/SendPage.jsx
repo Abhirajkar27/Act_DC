@@ -1,13 +1,15 @@
 import React, { useContext } from 'react';
 import './SendPage.css';
 import { DC_Context } from '../../context/DC_Context';
+import profpic from '../../assets/img/profile.png';
+import lock from '../../assets/img/lock.png';
 import AddNote from '../../components/AddNote';
 
 const SendPage = (props) => {
     const { dcQues,
         senAns,
         noteTextareaValue,
-        setNoteTextareaValue} = useContext(DC_Context);
+        setNoteTextareaValue } = useContext(DC_Context);
 
     return (
         <div className='send-pg_SDC'>
@@ -24,12 +26,17 @@ const SendPage = (props) => {
             <div className='msgSubheading_SDC'><span>Choose a question for you both to answer</span></div>
             <div className="ques_ans_container_SDC">
                 <span className='ques_SDC'>{dcQues}</span>
-                <div className='ans_area_SDC'>{senAns}</div>
+                <div className='ans_area_SDC'>
+                    <div className='prof_SDC'>
+                        <img src={profpic} alt='profile_img' /></div>
+                    <span className='Blur_text_SDE'>{senAns}</span>
+                    <div className='lock_SDC'>
+                        <img src={lock} alt='lock-icon' /></div>
+                </div>
             </div>
-            <AddNote noteTextareaValue={noteTextareaValue} setNoteTextareaValue={setNoteTextareaValue}/>
+            <AddNote noteTextareaValue={noteTextareaValue} setNoteTextareaValue={setNoteTextareaValue} />
             <button className={`nxtbtntp_SDC`}><span className={`nxtbtntp-txt_SDC`}>Send</span></button>
         </div>
     )
 }
-
 export default SendPage;

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import main_pht from '../../assets/DC_Main_pic.png';
+import main_pht from '../../assets/img/DC_Main_pic.png';
 import ActivityInfo from '../../components/ActivityInfo';
 import './Landing.css';
 

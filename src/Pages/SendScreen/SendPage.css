@@ -79,6 +79,10 @@
 }
 
 .ans_area_SDC {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
   width: 82vw;
   height: 8.3vh;
   flex-shrink: 0;
@@ -88,6 +92,50 @@
   border-radius: var(--large, 0.75rem);
   background: var(--Accent-Accent--03-Accent-03---Light, #feffb1);
   border: none;
+  position: relative;
+}
+.prof_SDC {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: absolute;
+  left: 1rem;
+}
+.prof_SDC img {
+  width: 14vw;
+  height: 5.6vh;
+  height: 3rem;
+  border-radius: 50%;
+  position: relative;
+}
+
+.Blur_text_SDE {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42vw;
+  color: var(--Dark-Dark--100, #0e1928);
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Gilroy;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; 
+  filter: blur(4px); 
+}
+
+.lock_SDC {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: absolute;
+  right: 1.5rem;
+}
+.lock_SDC img {
+  width: 10vw;
+  height: 5vh;
 }
 
 .nxtbtntp_SDC {
