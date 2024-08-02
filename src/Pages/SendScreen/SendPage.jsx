@@ -38,7 +38,7 @@ const SendPage = (props) => {
                 </div>
             </div>
             <AddNote noteTextareaValue={noteTextareaValue} setNoteTextareaValue={setNoteTextareaValue} />
-            <button className={`nxtbtntp_SDC`}><span className={`nxtbtntp-txt_SDC`}>Send</span></button>
+            <button onClick={props.onforw} className={`nxtbtntp_SDC`}><span className={`nxtbtntp-txt_SDC`}>Send</span></button>
         </div>
     )
 }
