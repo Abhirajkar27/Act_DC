@@ -25,7 +25,7 @@ const Disclosure = (props) => {
     <div className="container_DDC">
       <div className="copy-box_DDC">
         <div className="copy-text_DDC">
-          {`https://emojichactivitywybtestingv2rec.netlify.app/?activityId=${props.activityId}`}
+          {`https://dumbdisclosureactivitywybtestingrec.netlify.app?activityId=${props.activityId}`}
         </div>
         <button className="copy-button_DDC" onClick={handleCopy}>
           Copy

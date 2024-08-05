@@ -9,7 +9,7 @@ import Disclosure from "./Pages/SendScreen/Disclosure";
 
 function App() {
   const [gameIndex, setIndex] = useState(null);
-  const [activityId, setActivityId] = useState('ab');
+  const [activityId, setActivityId] = useState('');
 
   let content;
   switch (gameIndex) {
@@ -17,7 +17,7 @@ function App() {
       content = <DCMain onClose={() => { setIndex(null); }} onforw={() => { setIndex(1); }} />;
       break;
     case 1:
-      content = <SendPage onClose={() => { setIndex(0); }} onforw={() => { setIndex(2); }} />;
+      content = <SendPage onClose={() => { setIndex(0); }} onforw={() => { setIndex(2); }} setActivityId={setActivityId} />;
       break;
     case 2:
       content = <Disclosure activityId={activityId}/>;

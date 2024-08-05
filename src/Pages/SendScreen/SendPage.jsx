@@ -11,6 +11,45 @@ const SendPage = (props) => {
         noteTextareaValue,
         setNoteTextareaValue } = useContext(DC_Context);
 
+
+
+        async function handleForwarsActivity() {
+            const data = {
+              reqD: [
+                { DCQues: dcQues,
+                    DCSenAns: senAns,
+                 }
+              ],
+              message: noteTextareaValue
+            };
+            console.log("Sending Data",JSON.stringify(data));
+            try {
+              const response = await fetch('https://vyld-cb-dev-api.vyld.io/api/v1/activity-games/game', {
+                // mode: 'no-cors',
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json'
+                },
+                body:JSON.stringify(data),
+              });
+              //  console.log("response", response);
+              if (response.ok) {
+                const responseData = await response.json();
+                console.log("data",responseData );
+                const activityId = responseData.data.activityId; 
+                console.log('Activity ID:', activityId);
+                props.setActivityId(activityId);
+              } else {
+                console.error('Failed to send data', response.statusText);
+              }
+            } catch (error) {
+              console.error('Error:', error);
+            }
+            props.onforw();
+          }
+
+
+
     return (
         <div className='send-pg_SDC'>
             <div className="backbtnSDC" onClick={props.onClose}>
@@ -38,7 +77,7 @@ const SendPage = (props) => {
                 </div>
             </div>
             <AddNote noteTextareaValue={noteTextareaValue} setNoteTextareaValue={setNoteTextareaValue} />
-            <button onClick={props.onforw} className={`nxtbtntp_SDC`}><span className={`nxtbtntp-txt_SDC`}>Send</span></button>
+            <button onClick={handleForwarsActivity} className={`nxtbtntp_SDC`}><span className={`nxtbtntp-txt_SDC`}>Send</span></button>
         </div>
     )
 }
